@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8%;
+    /* z-index: 100; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1b0238;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ea512a;
+    transition: 0.3s;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav div a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1b0238;
+}
+
+nav div button {
+    border: none;
+    color: white;
+    background: #ea512a;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.toolbar {
+    display: none;
+}
+
+.toolbar span {
+    font-size: 40px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background: #F1E7FF;
+    overflow: hidden;
+    position: relative;
+}
+
+.toggler a {
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+}
+
+.toggler a:hover {
+    background: #24275C;
+    color: white;
+    width: 100%;
+}
+
+.toggler {
+    position: relative;
+}
+
+.toggler .dropdown {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    background: white;
+    width: 250px;
+    gap: 0;
+    top: 50px;
+    right: -15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.toggler:hover .dropdown{
+    display: flex;
+    transition: 3s;
+}
+
+.hero .header {
+    padding: 0 8%;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.hero .circle {
+    width: 40%;
+    height: 800px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: #FEF8F8;
+}
+
+.hero .circle .girl {
+    width: 680px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.cloud {
+    position: absolute;
+    bottom: -110px;
+}
+
+.hero .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h6 {
+    color: #ea512a;
+    font-size: 16px;
+}
+
+.header h1 {
+    color: #1b0238;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+
+.header p {
+    font-size: 16px;
+    color: lightslategrey;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.header .tollbar {
+    display: flex;
+    gap: 20px;
+}
+
+.header .learn-btn {
+    border: none;
+    font-size: 16px;
+    background: #ea512a;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+}
+
+.header .more-btn {
+    border: none;
+    font-size: 16px;
+    background: #F5890D;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+}
+
+.header .banner-1 {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    animation: move 2.5s infinite linear alternate;
+}
+
+.header .banner-2 {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    animation: move2 2.5s infinite linear alternate;
+}
+
+.header .banner-3 {
+    width: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    animation: move3 2.5s infinite linear alternate;
+}
+
+.header .banner-4 {
+    width: 70px;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    animation: move4 2.5s infinite linear alternate;
+}
+
+@keyframes move {
+    0%{
+        left: 50px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+@keyframes move2 {
+    0%{
+        right: 20px;
+    }
+    100%{
+        right: 50px;
+    }
+}
+
+@keyframes move3 {
+    0%{
+        left: 20px;
+    }
+    100%{
+        left: 50px;
+    }
+}
+
+@keyframes move4 {
+    0%{
+        right: 50px;
+    }
+    100%{
+        right: 100px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .toolbar {
+        display: flex;
+    }
+
+    .tool-button {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        padding: 10px 16px;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .hero .header {
+        flex-direction: column;
+    }
+
+    .hero .circle {
+        background: transparent;
+    }
+
+    .hero .cloud {
+        display: none;
+    }
+
+    .hero .circle .girl {
+        position: unset;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+    .hero .header {
+        width: 100%;
+        padding: 50px 24px;
+        align-items: center;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    .header .banner-1, .header .banner-2, .hero .banner-3, .hero .banner-4 {
+        display: none;
+    }
+}

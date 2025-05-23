@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .menu ul {
+  display: flex;
+  gap: 50px;
+  /* text-align: center; */
+}
+
+.header .menu ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+/* hero section  */
+.hero-section {
+  width: 100%;
+  height: 450px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  background-image: linear-gradient(
+      to right top,
+      rgb(222, 148, 148, 0.5),
+      rgb(230, 230, 79, 0.5),
+      rgb(92, 227, 92, 0.5),
+      rgb(239, 112, 239, 0.5)
+    ),
+    url("./home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section img {
+  width: 560px;
+}
+.hero-section div h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+}
+.hero-section div p{
+    font-size: 18px;
+    color: white;
+    padding-top: 20px;
+}
+.hero-section div button{
+    margin-top: 20px;
+    padding: 20px 40px;
+    border: none;
+    font-size: 20px;
+    background-color: #1DC9E3;
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* position: fixed; */
+}
+.hero-section div button:hover{
+    background: transparent;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* wlcome-section */
+.wlcome-section{
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #1C1C1C;
+}
+.wlcome-section h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.wlcome-section .wlcome-data div h2{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.wlcome-section .wlcome-data div p{
+    color: #535BD4;
+    letter-spacing: 2px;
+}
+.wlcome-section .wlcome-data div .title{
+    color: grey;
+    margin-top: 10px;
+}
+.wlcome-section .wlc-img img{
+    width: 250px;
+}
+.wlcome-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+.wlcome-data .wlc-img{
+    display: flex;
+    gap: 20px;
+}
+
+/* remdom-secton */
+.remdom-secton{
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #1DC9E3;
+}
+.remdom-secton div p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+}
+.remdom-secton div button{
+    margin-top: 40px;
+    padding: 20px 40px;
+    border: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.remdom-secton div button:hover{
+    background: transparent;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* app-screenshot */
+.app-screenshot{
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #1C1C1C;
+}
+.app-screenshot h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.app-screenshot p{
+    margin-top: 20px;
+    text-align: center;
+    color: grey;
+}
+.app-screenshot .app-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+.app-screenshot .app-img img{
+    width: calc(25% - 20px);
+}
+
+/* App Pricing */
+.app-pricing{
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #535BD4;
+}
+.app-pricing h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.price-box{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.price-box .box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    /* height: 400px; */
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+.price-box .box .p-dollar{
+    color: #1DC9E3;
+    font-size: 60px;
+}
+.price-box .box .p-str{
+    
+    color: #535BD4;
+    font-size: 25px;
+}
+.price-box .box p{
+    color: grey;
+    font-size: 20px;
+}
+.price-box .box .one{
+    padding-bottom: 40px;
+}
+.price-box .box button{
+    position: absolute;
+    bottom: -25px;
+    left: 70px;
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: none;
+    font-size: 20px;
+    background-color: #1DC9E3;
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.price-box .box button:hover{
+    background: white;
+    color: black;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* Newsletter */
+.newsletter{
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #26C0D4;
+}
+.newsletter h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.newsletter p{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(223, 221, 221);
+}
+.newsletter div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.newsletter div form input{
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding-left: 10px;
+}
+.newsletter div form input:focus{
+    outline: none;
+}
+.newsletter div button{
+    padding: 15px 40px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    color: #1DC9E3;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.newsletter div button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid wheat;
+    /* border-top: 2px solid white; */
+    /* border-bottom: 2px solid white; */
+    /* border-left: 2px solid black; */
+    /* border-right: 2px solid black; */
+}
+
+/* Footer  */
+.footer{
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #1C1C1C;
+}
+.footer div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer div p{
+    color: grey;
+    font-size: 20px;
+}
+.footer div .icons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    color: grey;
+}

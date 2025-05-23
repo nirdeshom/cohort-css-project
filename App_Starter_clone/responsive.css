@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    .header{
+        padding: 0 50px;
+    }
+    .header .menu ul{
+        /* display: none; */
+    }
+}

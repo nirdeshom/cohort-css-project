@@ -1,0 +1,604 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+}
+nav div{
+    width: 80%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div h1{
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+nav div ul{
+    display: flex;
+    gap: 30px;
+}
+nav div ul li{
+    list-style: none;
+}
+nav div ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+nav div ul li a:hover{
+    color: #D9832E;
+    transition: 0.2s;
+}
+
+/* header section */
+header{
+    display: flex;
+    justify-content: center;
+}
+header .container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.subtitle{
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.cotation{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.dev{
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: grey;
+}
+.action{
+    margin-top: 25px;
+    display: flex;
+    column-gap: 30px;
+}
+.work-btn{
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #D9832E;
+    border-style: none;
+    color: white;
+}
+.hire-btn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 2px solid #D9832E;
+    color: #D9832E;
+    background-color: white;
+    /* border-style: none; */
+}
+.hire-btn:hover{
+    background-color: #D9832E;
+    color: white;
+    transition: 1s;
+}
+/* about section  */
+.about-me{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #EAEDF2;
+}
+.about-me .container{
+    width: 80%;
+}
+.about-me .container h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.container p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.about-image-box{
+    display: flex;
+    gap: 50px;
+}
+.image-box{
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+}
+.social-box{
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    left: 14px;
+    padding: 10px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-box button{
+    width: 35px;
+    height: 35px;
+    background-color: #D9832E;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+.social-box button:hover{
+    background-color: black;
+}
+.about-data{
+    margin-top: 20px;
+}
+.about-data h1{
+    padding-top: 14px;
+}
+.about-data p{
+    text-align: justify;
+}
+.pres-info{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.lable{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.lable h5{
+    border-right: 1px solid grey;
+    margin-right: 15px;
+    font-weight: 500;
+    width: 100px;
+}
+.about-data button{
+    margin-top: 40px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    background-color: #D9832E;
+    color: white;
+    font-size: 18px;
+}
+/* skills section  */
+.skills{
+    display: flex;
+    justify-content: center;
+}
+.my-skills{
+    width: 80%;
+    padding: 60px 0px;
+}
+.my-skills h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.my-skills p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.skills-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.card-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.card{
+    width: 48%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: 2px solid #D9832E;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px lightgrey;
+
+}
+.card i{
+    font-size: 20px;
+}
+.card h4{
+    font-weight: 500;
+}
+.pogresh{
+    width: 100%;
+}
+.p-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-main{
+    height: 5px;
+    background-color: lightgrey;
+}
+.p-92{
+    width: 85%;
+    height: 100%;
+    background-color: #D9832E;
+}
+.p-76{
+    width: 75%;
+    height: 100%;
+    background-color: #D9832E;
+}
+.p-50{
+    width: 80%;
+    height: 100%;
+    background-color: #D9832E;
+}
+.p-30{
+    width: 70%;
+    height: 100%;
+    background-color: #D9832E;
+}
+.pres-all{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+/* services  */
+.servic-section{
+    display: flex;
+    justify-content: center;
+    background-color: #EAEDF2;
+}
+.servics{
+    width: 80%;
+    padding: 60px 0px;
+}
+.servics h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.servic-section .servics p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.service-box{
+    margin-top: 48px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.service-box .cards{
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    width: 30%;
+}
+.service-box .cards p{
+    margin-top: 14px;
+    color: black;
+}
+.service-box .cards:hover{
+    background-color: #D9832E;
+    color: white;
+    transition: 1s;
+}
+.service-box .cards button{
+    margin-bottom: 20px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    border: 2px dotted #D9832E;
+    font-size: 40px;
+    color: #D9832E;
+}
+
+/* work  */
+.work-section{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 60px 0px;
+
+}
+.work-section .work{
+    width: 80%;
+}
+.work-section .work h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.work-section .work p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.work-box{
+    margin-top: 30px;
+    width: 100%;
+}
+.img-card{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.img-card img{
+    border-radius: 8px;
+}
+
+/* testimonials-section */
+.testimonials-section{
+    display: flex;
+    justify-content: center;
+    background-color: #EAEDF2;
+    padding: 60px 0px;
+}
+.testimonials{
+    width: 80%;
+}
+.testimonials h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.testimonials p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.test-box{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-top: 50px;
+}
+.text-card{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+.text-card img{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.test-data p{
+    color: rgb(75, 74, 74);
+    font-size: 16px;
+}
+.test-data h3{
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+/* blog secton  */
+.blog-secton{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 60px 0px;
+}
+.blog{
+    width: 80%;
+}
+.blog h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.blog p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+.l-blog{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.c-blog .card-contant{
+    position: relative;
+    top: -80px;
+    left: 18px;
+}
+.card-contant h6{
+    background-color: #D9832E;
+    width: fit-content;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+}
+.card-contant div{
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 16px;
+    width: 85%;
+}
+.card-contant div h4{
+    padding-top: 10px;
+}
+.card-contant div p{
+    padding-bottom: 10px;
+}
+.card-contant div button{
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 6px 18px;
+    font-size: 14px;
+}
+.card-contant a{
+    color: #D9832E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Contact */
+.contact-section{
+    display: flex;
+    justify-content: center;
+    background-color: #EAEDF2;
+    padding: 60px 0px;
+}
+.contact{
+    width: 80%;
+}
+.contact h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contact p{
+    margin-top: 10px;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.form-info .carded{
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+}
+.form-info{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-card{
+    width: 100%;
+    background-color: white;
+    padding: 18px 25px;
+}
+.form-info .carded button{
+    width: 75px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #D9832E;
+}
+.form-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+    /* background-color: red; */
+}
+.form-card input{
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.form-card form{
+    display: flex;
+    flex-direction: column;
+}
+.form-card form div{
+    display: flex;
+    gap: 30px;
+}
+.form-card form div input{
+    width: 50%;
+}
+.form-card textarea{
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.form-card button{
+    /* width: fit-content; */
+    width: fit-content;
+    margin-top: 30px;
+    border: none;
+    background-color: #D9832E;
+    color: white;
+    padding: 16px 24px;
+    /* font-size: 25px; */
+}
+.form-card textarea:focus{
+    outline: none;
+}
+.form-card input:focus{
+    outline: none;
+}
+
+/* footer  */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2f2f2f;
+    padding: 30px 0px;
+}
+.my-footer{
+    width: 80%;
+}
+.my-footer p{
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5px;
+}
+.form-info .carded div p{
+    color: black;
+    font-weight: 500;
+}
